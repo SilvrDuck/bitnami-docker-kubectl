@@ -21,6 +21,6 @@ ENV BITNAMI_APP_NAME="kubectl" \
     BITNAMI_IMAGE_VERSION="1.18.6-debian-10-r17" \
     PATH="/opt/bitnami/kubectl/bin:$PATH"
 
-USER 1001
+USER 0
 ENTRYPOINT [ "kubectl" ]
 CMD [ "--help" ]
